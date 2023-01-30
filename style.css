@@ -1,4 +1,4 @@
-@import url(./normalize.css);
+@import url(./vendor/normalize.css);
 
 @import url(./vendor/fonts.css);
 
@@ -149,6 +149,11 @@
 }
 
 .about__bike-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  color: #151515;
   max-width: max-content;
   padding-bottom: 209px;
   align-self: flex-end;
@@ -161,14 +166,6 @@
   content: ' ';
   width: 132px;
   border: 2px solid #d7d4d4;
-}
-
-.bike-title {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1;
-  color: #151515;
 }
 
 .quote {
@@ -239,12 +236,28 @@
   flex-direction: column; 
   padding: 60px 0;
   gap: 50px;
+  overflow: hidden;
+  position: relative;
+  --slidesCount: 3;
+  --activeSlide: 0;
+  --speed: 0.3s;
 }
 
-.slider__wrapper {
+.slider__container {
+  display: grid;
+  grid-template: 1fr / repeat(var(--slidesCount), 100%);
+  position: relative;
+  left: calc(var(--activeSlide) * -100%);
+  transition: left var(--speed) ease-in-out;
+}
+
+.slider__item {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 80px;
+  position: relative;
+  overflow: hidden;
 }
 
 .slider__text {
@@ -254,14 +267,57 @@
   gap: 50px;
 }
 
-.slider__container {
+.slider__images {
   display: flex;
   gap: 40px;
+  position: relative;
+}
+
+.slider__item:before {
+  content: '';
+  width: 100px;
+  height: 40px;
+  left: -12px;
+  bottom: 17px;
+  transform: skew(333deg);
+  position: absolute;
+  background-color: #24b47e;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.slider__item:first-of-type::after {
+  content: url('./images/highway-line.png');
+  position: absolute;
+  z-index: 2;
+  bottom: 25px;
+  left: 16px;
+}
+
+.slider__item:nth-of-type(2)::after {
+  content: url('./images/gravel-line.png');
+  position: absolute;
+  z-index: 2;
+  bottom: 25px;
+  left: 16px;
+}
+
+.slider__item:nth-of-type(3)::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  z-index: 2;
+  bottom: 25px;
+  left: 16px;
 }
 
 .slider__image {
-  object-fit: cover;
+  position: relative;
+  object-position: center;
   object-fit: contain;
+  max-width: 100%;
 }
 
 .slider__buttons {
@@ -286,6 +342,78 @@
 
 .slider__button:last-of-type {
   transform: scaleX(-1);
+}
+
+.bikes {
+  max-width: calc(100% - 240px);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.bikes__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  align-items: baseline;
+}
+
+.bikes__menu {
+  display: flex;
+  gap: 40px;
+}
+
+.bikes__purpose {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  margin: 0;
+  color: #222;
+  opacity: .7;
+}
+
+.bikes__purpose:hover {
+  cursor: url('/images/cursor.svg'), pointer;
+}
+
+.bikes__purpose:active {
+  font-weight: 600;
+  opacity: 1;
+  color: #151515;
+}
+
+.bikes__slider {
+ overflow: hidden;
+}
+
+.bikes__track {
+  display: flex;
+}
+
+.bikes__selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.bikes__link {
+  text-decoration: none;
+  cursor: url('./images/cursor.svg'), pointer;
+}
+
+.bikes__image {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06))
+}
+
+.bikes__bike-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #151515;
+  margin: 0;
+  padding: 15px 0 0 5px;
 }
 
 .footer {
