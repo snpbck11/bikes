@@ -1,0 +1,13 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  gap: 50px;
+}
+
+@media screen and (max-width: 1030px) {
+  .slider {
+    gap: 0;
+    align-items: baseline;
+  }
+}

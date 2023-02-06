@@ -1,0 +1,11 @@
+.bikes__dots {
+  display: flex;
+  gap: 5px;
+  align-self: center;
+}
+
+@media screen and (min-width: 680px) {
+  .bikes__dots {
+    display: none;
+  }
+}

@@ -1,0 +1,20 @@
+.page {
+  min-width: 320px;
+  max-width: 1440px;
+  min-height: 100vh;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  transition: 1s;
+  background-color: var(--main-bg-color);
+  padding-top: 74px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  --main-text-color: #151515;
+  --second-text-color: #222;
+  --main-bg-color: #f4f4f4;
+}

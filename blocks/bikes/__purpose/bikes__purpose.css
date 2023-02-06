@@ -1,0 +1,17 @@
+.bikes__purpose {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  margin: 0;
+  color: var(--second-text-color);
+  opacity: .7;
+  transition: .4s;
+}
+
+@media screen and (max-width: 680px) {
+  .bikes__purpose {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.27;
+  }
+}

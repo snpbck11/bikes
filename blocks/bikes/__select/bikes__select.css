@@ -1,0 +1,10 @@
+.bikes__select {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+@media screen and (max-width: 680px) {
+  .bikes__select {
+   align-self: center;
+  }
+}

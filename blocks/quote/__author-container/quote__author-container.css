@@ -1,0 +1,4 @@
+.quote__author-container {
+  display: flex;
+  flex-direction: column;
+}

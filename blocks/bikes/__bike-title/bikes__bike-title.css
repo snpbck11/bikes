@@ -1,0 +1,14 @@
+.bikes__bike-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--main-text-color);
+  margin: 0;
+}
+
+@media screen and (max-width: 1030px) {
+  .bikes__bike-title {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}

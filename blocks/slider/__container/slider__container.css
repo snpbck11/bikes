@@ -1,0 +1,13 @@
+.slider__container {
+  display: grid;
+  grid-template: 1fr / repeat(3, 100%);
+  position: relative;
+  left: 0;
+  transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 1030px) {
+  .slider__container {
+    grid-area: 1 / 1;
+  }
+}

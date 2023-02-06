@@ -1,0 +1,16 @@
+.header__menu-button {
+  border: none;
+  background: url('../../../images/Menu.svg') center transparent no-repeat;
+  background-size: contain;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  margin-right: 18px;
+  transition: all ease;
+}
+
+@media screen and (min-width: 1030px) {
+  .header__menu-button {
+    display: none;
+  }
+}

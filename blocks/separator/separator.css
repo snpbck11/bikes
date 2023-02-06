@@ -1,0 +1,13 @@
+.separator {
+  width: 100%;
+  padding-top: 60px;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1030px) {
+  .separator {
+   border-bottom: 1px solid #e3e3e3;
+   padding-top: 80px;
+  }
+}

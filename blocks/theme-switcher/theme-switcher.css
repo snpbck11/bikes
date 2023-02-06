@@ -1,0 +1,7 @@
+.theme-switcher {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  --icon-fill: #cfcfcf;
+  --toggler-bg-color: #fff;
+}

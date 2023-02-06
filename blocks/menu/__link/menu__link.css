@@ -1,0 +1,13 @@
+.menu__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--main-text-color);
+  text-align: right;
+  transition: .5s ease;
+}
+
+.menu__link:hover {
+  opacity: .75;
+}

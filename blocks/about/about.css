@@ -1,0 +1,18 @@
+.about {
+  max-width: calc(100% - 120px);
+  margin-left: auto;
+  display: grid;
+  justify-content: space-between;
+  grid-template: repeat(3, min-content) 1fr / minmax(min-content, 458px) minmax(min-content, 610px);
+  row-gap: 50px;
+}
+
+@media screen and (max-width: 1030px) {
+  .about {
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template: min-content 348px min-content min-content / 1fr;
+    row-gap: 40px;
+    padding: 40px 0 0;
+  }
+}

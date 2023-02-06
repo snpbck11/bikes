@@ -1,0 +1,10 @@
+.bikes__menu {
+  display: flex;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1030px) {
+  .bikes__menu {
+    display: none;
+  }
+}

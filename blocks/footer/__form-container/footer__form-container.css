@@ -1,0 +1,12 @@
+.footer__form-container {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media screen and (max-width: 1030px) {
+  .footer__form-container {
+    gap: 40px;
+  }
+}

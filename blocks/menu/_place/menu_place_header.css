@@ -1,0 +1,11 @@
+.menu_place_header {
+  padding: 28px 0;
+  gap: 34px; 
+  margin-right: 120px;
+}
+
+@media screen and (max-width: 1030px) {
+  .menu_place_header {
+    display: none;
+  }
+}

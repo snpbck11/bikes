@@ -1,0 +1,5 @@
+.bikes__purpose_active {
+  font-weight: 600;
+  color: var(--main-text-color);
+  opacity: 1;
+}

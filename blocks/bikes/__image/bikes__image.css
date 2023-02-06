@@ -1,0 +1,16 @@
+.bikes__image {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 680px) {
+  .bikes__image {
+    max-width: 254px;
+    padding: 0;
+    filter: none;
+  }
+}

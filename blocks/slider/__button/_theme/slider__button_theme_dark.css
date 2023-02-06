@@ -1,0 +1,9 @@
+.slider__button_theme_dark {
+  background: url('../../../../images/arrow-back-light.svg') center #434343 no-repeat;
+}
+
+@media screen and (max-width: 1030px) {
+  .slider__button_theme_dark {
+    background-size: 5px 10px;
+  }
+}
