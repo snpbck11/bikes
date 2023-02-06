@@ -1,0 +1,7 @@
+.menu_place_burger-menu {
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  flex: 1;
+  padding-top: 70px;
+}

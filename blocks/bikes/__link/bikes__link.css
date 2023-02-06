@@ -1,0 +1,18 @@
+.bikes__link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+@media screen and (max-width: 680px) {
+  .bikes__link {
+    align-items: center;
+    filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    padding: 15px 15px 16px 15px;
+    gap: 3px;
+  }
+}
+

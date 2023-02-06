@@ -1,0 +1,5 @@
+@media screen and (max-width: 1030px) {
+  .theme-switcher_place_footer {
+    display: none;
+  }
+}

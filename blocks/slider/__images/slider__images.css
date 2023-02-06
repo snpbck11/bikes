@@ -1,0 +1,31 @@
+.slider__images {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  padding-top: 30px;
+}
+
+.slider__images:before {
+  content: '';
+  width: 100px;
+  height: 40px;
+  left: -12px;
+  bottom: 17px;
+  transform: skew(333deg);
+  position: absolute;
+  background-color: #24b47e;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1030px) {
+  .slider__images {
+    padding: 0;
+    grid-area: 2 / 1;
+  }
+  .slider__images:before {
+    width: 77px;
+    height: 28px;
+    bottom: 15px;
+  }
+}

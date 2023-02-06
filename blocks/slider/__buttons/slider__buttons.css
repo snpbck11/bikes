@@ -1,0 +1,13 @@
+.slider__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1030px) {
+  .slider__buttons {
+    grid-area: 1 / 1;
+    justify-self: end;
+    position: relative;
+    gap: 10px;
+  }
+}

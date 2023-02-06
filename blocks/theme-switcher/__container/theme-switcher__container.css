@@ -1,0 +1,8 @@
+.theme-switcher__container {
+  width: 44px;
+  height: 24px;
+  background-color: var(--toggler-bg-color);
+  border-radius: 100px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}

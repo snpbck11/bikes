@@ -1,0 +1,15 @@
+.bikes__links {
+  display: flex;
+  gap: 30px;
+  grid-area: 1 /1;
+  visibility: hidden;
+  opacity: 0;
+  transition: .4s;
+}
+
+@media screen and (max-width: 680px) {
+  .bikes__links {
+    display: grid;
+    max-width: 284px;
+  }
+}

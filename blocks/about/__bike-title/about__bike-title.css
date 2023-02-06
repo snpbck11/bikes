@@ -1,0 +1,25 @@
+.about__bike-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--main-text-color);
+  max-width: max-content;
+  padding-bottom: 209px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about__bike-title::after {
+  content: ' ';
+  width: 132px;
+  border: 2px solid #d7d4d4;
+}
+
+@media screen and (max-width: 1030px) {
+  .about__bike-title {
+    display: none;
+  }
+}

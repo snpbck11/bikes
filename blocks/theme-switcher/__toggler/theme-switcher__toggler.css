@@ -1,0 +1,7 @@
+.theme-switcher__toggler {
+  width: 20px;
+  height: 20px;
+  background-color: #24b47e;
+  border-radius: 100px;
+  transition: .4s;
+}

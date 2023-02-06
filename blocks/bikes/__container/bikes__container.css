@@ -1,0 +1,16 @@
+.bikes__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 1030px) {
+  .bikes__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  
+}
