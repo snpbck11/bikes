@@ -1,0 +1,17 @@
+.quote {
+  max-width: calc(100% - 240px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 80px;
+  padding: 60px 0 0;
+}
+
+@media screen and (max-width: 1030px) {
+  .quote {
+    max-width: 100%;
+    flex-direction: column-reverse;
+    padding: 20px 0 0;
+    gap: 40px;
+  }
+}

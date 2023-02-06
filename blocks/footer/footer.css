@@ -1,0 +1,7 @@
+.footer {
+  flex-shrink: 0;
+  background: var(--footer-bg-color);
+  transition: 1s;
+  --footer-bg-color: #efefef;
+  --footer-copyright-color: #cfcfcf;
+}

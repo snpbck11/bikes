@@ -1,0 +1,16 @@
+.section-subtitle {
+  max-width: 460px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--second-text-color);
+  opacity: 0.7;
+  margin: 0;
+}
+
+@media screen and (max-width: 1030px) {
+  .section-subtitle {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}

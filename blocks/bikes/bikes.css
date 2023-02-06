@@ -1,0 +1,16 @@
+.bikes {
+  max-width: calc(100% - 240px);
+  margin: 0 auto;
+  padding: 60px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+@media screen and (max-width: 1030px) {
+  .bikes {
+    max-width: 100%;
+    padding: 40px 0 0;
+    gap: 20px;
+  }
+}

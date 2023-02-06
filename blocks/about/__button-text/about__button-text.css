@@ -1,0 +1,12 @@
+.about__button-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+}
+

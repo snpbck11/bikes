@@ -1,0 +1,16 @@
+.quote__author-subline {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--second-text-color);
+  opacity: .7;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1030px) {
+  .quote__author-subline {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}

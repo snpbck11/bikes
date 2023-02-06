@@ -1,0 +1,29 @@
+.slider__button {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background: url('../../../images/arrow-back-dark.svg') center #ebebeb no-repeat;
+  border-radius: 50px;
+  transition: opacity .5s;
+}
+
+.slider__button:hover {
+  opacity: .6;
+}
+
+.slider__button:disabled {
+  opacity: .3;
+}
+
+.slider__button:last-of-type {
+  transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 1030px) {
+  .slider__button {
+    width: 24px;
+    height: 24px;
+    background-size: 5px 10px;
+  }
+}
